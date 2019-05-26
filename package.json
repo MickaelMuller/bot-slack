@@ -1,5 +1,5 @@
 {
-  "name": "poke-bot",
+  "name": "bot-slack",
   "version": "0.0.0",
   "description": "",
   "private": true,
@@ -9,14 +9,17 @@
     "test": "mocha --recursive"
   },
   "dependencies": {
+    "@slack/client": "^5.0.1",
     "cookie-parser": "^1.4.4",
     "debug": "^4.1.1",
     "express": "^4.16.4",
     "http-errors": "^1.7.2",
     "morgan": "^1.9.1",
+    "pg": "^7.11.0",
     "random-puppy": "^1.1.0",
     "request": "^2.88.0",
     "slack": "^11.0.2",
+    "slackbots": "^1.2.0",
     "snoowrap": "^1.15.2"
   },
   "devDependencies": {
