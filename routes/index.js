@@ -3,7 +3,7 @@ const request = require('request');
 const { Client } = require('pg');
 const Slack = require('slack')
 
-var client = new Client({
+const client = new Client({
   user: "zosgirralsfyqh",
   password: process.env.passPG,
   database: process.env.dataBaseName,
@@ -33,7 +33,7 @@ router.post('/geekjoke', (req, res) => {
   });
 });
 
-router.get('/testinsert', (req, res) => {
+router.post('/testinsert', (req, res) => {
   client.query('SELECT name from users', (err, results) => {
     if (err) res.sendStatus(500);
     return res.json({
